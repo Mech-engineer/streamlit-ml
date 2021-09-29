@@ -8,8 +8,11 @@ from sklearn.preprocessing import LabelEncoder
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import plot_confusion_matrix, plot_roc_curve, plot_precision_recall_curve
 from sklearn.metrics import precision_score, recall_score
+import matplotlib.pyplot as plt
+
 
 def main():
+    st.set_option('deprecation.showPyplotGlobalUse', False)
     st.title("Binary Classification Web App")
     st.sidebar.title("Binary Classification Web App")
     st.markdown("Are your mushrooms edible or poisonous? 🍄")
